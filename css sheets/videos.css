@@ -1,0 +1,78 @@
+.videopreview {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 30px;
+}
+@media (max-width: 750px){
+  .videopreview {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media( min-width: 751px) and (max-width: 999px){
+  .videopreview {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1000px){
+  .videopreview {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.thumbnail-class {
+  position: relative;
+}
+.thumbnail {
+  width: 100%;
+  cursor: pointer;
+}
+.channelinfo {
+  width: 40px;
+}
+.channellogo {
+  margin-top: 15px;
+  width: 40px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.videoinfo {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+}
+.titlename {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 15px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.channelname {
+  color: #606060;
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 400;
+  cursor: pointer;
+}
+.viewsandtime {
+  color: #606060;
+  margin-bottom: 15px;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.video-time {
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 11px;
+  right: 5px;
+  font-size: 12px;
+  font-family: Roboto, Arial;
+  font-weight: 500;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+}
